@@ -1,0 +1,101 @@
+:root {
+    --main-bg-color: #577590;
+    --darkermain-bg-color: #36495a;
+    --second-bg-color: #718EA9;
+    --third-bg-color: #96abbf;
+    --main-color: #F08A4B;
+    --second-color: #F2A541;
+    --third-color: #F3CA40;
+    --fourth-color: #D78A76;
+}
+
+
+html, body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+.bg-primary {
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+.bg-secondary {
+    color: white;
+    background-color: var(--second-bg-color);
+}
+
+.bg-tertiary {
+    background-color: var(--third-bg-color);
+}
+
+.color-1 {
+    color: var(--main-color);
+}
+
+.color-2 {
+    color: var(--second-color);
+}
+
+.color-3 {
+    color: var(--third-color);
+}
+
+.color-4 {
+    color: var(--fourth-color);
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    height: 7%;
+    display:flex;
+    user-select: none;
+}
+
+.navbar-button {
+    height: 100%;
+    width: 11%;
+    transition-duration: 0.4s;
+}
+
+.navbar-title {
+    font-weight: bold;
+    font-size: 100%;
+    transition-duration: 0.4s;
+    right: 1%;
+    margin: 0;
+    position: absolute;
+    text-align: right;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.navbar-button:hover{
+    background-color: var(--fourth-color);
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 150%;
+    width: inherit;
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.content {
+    margin: 8px;
+}
+
+.selected {
+    background-color: var(--darkermain-bg-color);
+}
