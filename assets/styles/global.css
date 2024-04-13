@@ -60,17 +60,27 @@ html, body {
     transition-duration: 0.4s;
 }
 
-.navbar-title {
+.navbar-logo {
+    height: 100%;
+    right: 0;
+}
+
+.navbar-right {
     font-weight: bold;
     font-size: 100%;
-    transition-duration: 0.4s;
-    right: 1%;
-    margin: 0;
     position: absolute;
     text-align: right;
+    right: 0;
+    margin: 0;
     top: 50%;
+    height: 100%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    display: flex;
+}
+
+.navbar-title {
+    padding-right: 15px;
 }
 
 .navbar-button:hover{
@@ -93,9 +103,29 @@ html, body {
 
 
 .content {
+    height: 100%;
     margin: 8px;
+}
+
+.flex-content {
+    display: flex;
+    height: 100%;
 }
 
 .selected {
     background-color: var(--darkermain-bg-color);
+}
+
+.title-container {
+    width: 100%;
+}
+
+.title {
+    width: 10%;
+    margin-left: 25%;
+}
+
+.title-text {
+    text-align: center;
+
 }
